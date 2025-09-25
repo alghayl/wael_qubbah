@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+/*           Header              */
+header {
+  text-align: center;
+  padding: 20px;
+  background: #e67e22;
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+/*         Navigation            */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background: white;
+  color: #e67e22;
+}
+/*            Main               */
+main {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #4a90e2;
+}
+/*            Tables             */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+table th {
+  background: #e67e22;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+/*            Forms              */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #4a90e2;
+}
+
+button, input[type="submit"] {
+  background: #e67e22;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+  background: #1812ca;
+}
+/*        Gallery Page CSS       */
+/* Figures & Images */
+ figure {
+    margin: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+figure:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+figure img {
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+figcaption {
+    padding: 10px;
+    font-size: 0.9rem;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+}
+/*       Contact Page            */
+.contact-container {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+.contact-container h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #e67e22;
+}
+
+.contact-container .form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.contact-container label {
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-container input,
+.contact-container textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s, transform 0.2s;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  border-color: #4a90e2;
+  transform: scale(1.02);
+}
+
+.contact-container textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-container button {
+  background: #e67e22;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-container button:hover {
+  background: #1812ca;
+  transform: translateY(-2px);
+}
+
+.contact-info {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #555;
+  text-align: center;
+}
+/*            Footer             */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px;
+  background: #4a90e2;
+  color: white;
+  border-radius: 12px;
+}
+
+/* ============================= */
+/*          Animations           */
+/* ============================= */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/*        Responsive Design      */
+@media (max-width: 768px) {
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  table th, table td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .contact-container {
+    padding: 15px;
+  }
+
+  .contact-container input,
+  .contact-container textarea {
+    font-size: 0.9rem;
+  }
+}
+
+/* الشاشات الصغيرة جدًا (أقل من 480px) */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  nav ul {
+    gap: 6px;
+  }
+
+  nav ul li a {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+
+  button, input[type="submit"] {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+/*Gallery*/
+/* Figures و Images */
+ figure {
+    margin: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+figure:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+figure img {
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+figcaption {
+    padding: 10px;
+    font-size: 0.9rem;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+} 
+
+
