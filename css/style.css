@@ -15,7 +15,7 @@ body {
 header {
   text-align: center;
   padding: 20px;
-  background: #e67e22;
+  background: #08e50f;
   color: white;
   border-radius: 12px;
   margin-bottom: 20px;
@@ -44,7 +44,7 @@ nav ul li a {
 
 nav ul li a:hover {
   background: white;
-  color: #e67e22;
+  color: #19d736;
 }
 /*            Main               */
 main {
@@ -75,7 +75,7 @@ table th, table td {
 }
 
 table th {
-  background: #e67e22;
+  background: #0ec51d;
   color: white;
 }
 
@@ -103,7 +103,7 @@ input:focus {
 }
 
 button, input[type="submit"] {
-  background: #e67e22;
+  background: #2232e6;
   color: white;
   border: none;
   padding: 10px;
@@ -316,5 +316,6 @@ figcaption {
     color: #333;
     text-align: center;
 } 
+
 
 
